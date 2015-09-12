@@ -1000,8 +1000,7 @@ var Select = React.createClass({
 			ref: 'input',
 			className: 'Select-input ' + (this.props.inputProps.className || ''),
 			tabIndex: this.props.tabIndex || 0,
-			onFocus: this.handleInputFocus,
-			onBlur: this.handleInputBlur
+			onFocus: this.handleInputFocus
 		};
 		for (var key in this.props.inputProps) {
 			if (this.props.inputProps.hasOwnProperty(key) && key !== 'className') {
